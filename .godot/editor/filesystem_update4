@@ -1,16 +1,1 @@
-res://src/dummy.tscn
-res://src/hud/status.tscn
-res://src/game.tscn
-res://src/characters/car.gd
-res://src/game.gd
-res://src/hud/hud.tscn
-res://src/hud/hud.gd
-res://src/globals/main.gd
-res://src/hud/player_setting.tscn
-res://src/globals/config.gd
-res://src/characters/car.tscn
-res://src/globals/main.tscn
-res://src/hud/status.gd
-res://src/hud/result.tscn
-res://src/hud/result.gd
-res://src/globals/bgm_player.gd
+res://src/globals/bgm_player.tscn

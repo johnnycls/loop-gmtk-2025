@@ -1,0 +1,13 @@
+res://src/assets/base_theme.tres::23712fb75cf38b705fb51b0c7c884ded::1754025409::res://.godot/exported/133200997/export-900a56c22a97619d957271c6455f581a-base_theme.res
+res://src/characters/car.tscn::8b800858812e506da1249818cd3da008::1754049678::res://.godot/exported/133200997/export-d35c0442ebd114b61f2224e3828d6961-car.scn
+res://src/globals/bgm_player.tscn::fb79ecb212196db46a8a287463b03d96::1754051251::res://.godot/exported/133200997/export-ad034808d45e3abb17d6b2fd0367d67e-bgm_player.scn
+res://src/globals/config.tscn::78a8a817ecc37f34c4a91c6ecb2c64a0::1753967150::res://.godot/exported/133200997/export-b0f2957837a5963e7d3648c4b0cdf824-config.scn
+res://src/globals/global.tscn::3218124211f2354b42bbc582a2dc236a::1753966643::res://.godot/exported/133200997/export-65ce606ced35106f5a88d08a0287de20-global.scn
+res://src/globals/main.tscn::ce4481fb3452840265a29e8579184d8a::1754049678::res://.godot/exported/133200997/export-d12a59d07f76e05897690f8d4b2a9284-main.scn
+res://src/hud/hud.tscn::e767d651483a3b8260080c78db00becd::1754049698::res://.godot/exported/133200997/export-669ac7c8079ac5e3f1655da24b8bb4de-hud.scn
+res://src/hud/player_setting.tscn::cdf85bb9f7f479f76d6deb653e40c858::1754049678::res://.godot/exported/133200997/export-abe817767ceab1fed054caca0bbb8942-player_setting.scn
+res://src/hud/ready.tscn::24a973f32f471598edafaddbc50029b0::1754035133::res://.godot/exported/133200997/export-08816f3b145b744e10d224bf986f4896-ready.scn
+res://src/hud/result.tscn::25e3b283ccef2f83546b57821b164e31::1754049678::res://.godot/exported/133200997/export-07b13c34a9fb43864916c73327f4a097-result.scn
+res://src/hud/status.tscn::ec235a064324c13d14c9473d589f0501::1754049678::res://.godot/exported/133200997/export-eda8cc7151e60cbb7622f1b5e9e40ca2-status.scn
+res://src/dummy.tscn::440818df5542c9ede32723587144c29f::1754049678::res://.godot/exported/133200997/export-c23958481fbe827f46a12a031ac368af-dummy.scn
+res://src/game.tscn::8cbadc60d879e62970ff95c6b69f2ac2::1754049678::res://.godot/exported/133200997/export-c369a240ae45c9165bf44aee1dcd54aa-game.scn
