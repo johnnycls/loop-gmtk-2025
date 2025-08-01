@@ -15,18 +15,22 @@ var game
 func change_to_player_setting_page(_player_num: int) -> void:
 	var player_setting = player_setting_scene.instantiate()
 	hud.change_hud(player_setting)
+	hud.show_bg()
 	player_setting.set_player_num(_player_num)
 	
 func change_to_ready_page() -> void:
 	hud.change_hud(ready_scene.instantiate())
+	hud.show_bg()
 	
 func change_to_status_page() -> void:
 	hud.change_hud(status_scene.instantiate())
+	hud.hide_bg()
 	
 func change_to_result_page(_winner: int) -> void:
 	var result_page = result_scene.instantiate()
-	result_page.set_winner(_winner)
 	hud.change_hud(result_page)
+	result_page.set_winner(_winner)
+	hud.show_bg()
 
 func _ready() -> void:
 	change_to_player_setting_page(0)

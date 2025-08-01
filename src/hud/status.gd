@@ -22,16 +22,16 @@ func update_timer_label(time: int) -> void:
 	timer_label.text = str(time)
 
 func update_first_money_label(money: float) -> void:
-	first_money_label.text = "Money: " + str(money)
+	first_money_label.text = "Money: " + "%.2f" % money
 
 func update_first_cycle_label(cycle: int) -> void:
-	first_cycle_label.text = "Cycle: " + str(cycle)
+	first_cycle_label.text = "Loop: " + str(cycle)
 
 func update_second_money_label(money: float) -> void:
-	second_money_label.text = "Money: " + str(money)
+	second_money_label.text = "Money: " + "%.2f" % money
 
 func update_second_cycle_label(cycle: int) -> void:
-	second_cycle_label.text = "Cycle: " + str(cycle)
+	second_cycle_label.text = "Loop: " + str(cycle)
 
 func set_btn_enabled(btn_num: int, enabled: bool) -> void:
 	if btn_num == 0:

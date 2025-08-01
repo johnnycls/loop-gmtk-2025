@@ -1,8 +1,8 @@
-extends Node2D
+extends Node
 
 var car_scene = preload("res://src/characters/car.tscn")
 
-var time: int = 180
+var time: int = 200
 var status_page: Control
 
 var player_1_money: float = 0
@@ -25,6 +25,14 @@ func _change_money(_player_num: int, _delta: float):
 func set_status_page(_status_page) -> void:
 	status_page = _status_page
 	status_page.btn_pressed.connect(dispatch)
+	
+func cycle(_player_num: int):
+	if _player_num==0:
+		player_1_cycle += 1
+		status_page.update_first_cycle_label(player_1_cycle)
+	elif _player_num==1:
+		player_2_cycle += 1
+		status_page.update_second_cycle_label(player_2_cycle)
 
 func dispatch(num: int):
 	var car = car_scene.instantiate()
@@ -32,15 +40,19 @@ func dispatch(num: int):
 	if num == 0:
 		_change_money(0, -Main.player1_setting[0]["cost"])
 		car.init(num, Main.player1_setting[0])
+		car.cycle.connect(func(): cycle(0))
 	elif num == 1:
 		_change_money(0, -Main.player1_setting[1]["cost"])
 		car.init(num, Main.player1_setting[1])
+		car.cycle.connect(func(): cycle(0))
 	elif num == 2:
-		_change_money(1, -Main.player1_setting[0]["cost"])
+		_change_money(1, -Main.player2_setting[0]["cost"])
 		car.init(num, Main.player2_setting[0])
+		car.cycle.connect(func(): cycle(1))
 	elif num == 3:
-		_change_money(1, -Main.player1_setting[1]["cost"])
+		_change_money(1, -Main.player2_setting[1]["cost"])
 		car.init(num, Main.player2_setting[1])
+		car.cycle.connect(func(): cycle(1))
 
 func _on_timer_timeout() -> void:
 	_change_money(0, 20)

@@ -28,8 +28,8 @@ var ATTRIBUTES: Dictionary = {
 	"cost": func(level: int): return 1.2 ** level * 25,
   },
   "speed": {
-	"basic_value": 1,
-	"increase_value": 0.25,
+	"basic_value": 100,
+	"increase_value": 25,
 	"max_level": 10,
 	"cost": func(level: int): return 1.2 ** level * 25,
   },

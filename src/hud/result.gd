@@ -1,4 +1,4 @@
-extends VBoxContainer
+extends MarginContainer
 
 @onready var winner_label: Label = $PanelContainer/CenterContainer/VBoxContainer/Label
 

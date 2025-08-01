@@ -51,23 +51,25 @@ layout_mode = 2
 
 [node name="TextureButton" type="TextureButton" parent="PanelContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
+disabled = true
 shortcut = SubResource("Shortcut_r3kpl")
 texture_normal = ExtResource("2_4j4pv")
 texture_disabled = ExtResource("3_6rdcq")
 
 [node name="TextureButton2" type="TextureButton" parent="PanelContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
+disabled = true
 shortcut = SubResource("Shortcut_uq054")
 texture_normal = ExtResource("3_51w16")
 texture_disabled = ExtResource("5_bf7pw")
 
 [node name="Label" type="Label" parent="PanelContainer/VBoxContainer"]
 layout_mode = 2
-text = "Money: "
+text = "Money: 0.00"
 
 [node name="Label2" type="Label" parent="PanelContainer/VBoxContainer"]
 layout_mode = 2
-text = "Cycle: "
+text = "Loop: 0"
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 2
@@ -87,20 +89,22 @@ layout_mode = 2
 
 [node name="TextureButton" type="TextureButton" parent="PanelContainer2/VBoxContainer/HBoxContainer"]
 layout_mode = 2
+disabled = true
 shortcut = SubResource("Shortcut_51w16")
 texture_normal = ExtResource("4_usu6v")
 texture_disabled = ExtResource("7_16025")
 
 [node name="TextureButton2" type="TextureButton" parent="PanelContainer2/VBoxContainer/HBoxContainer"]
 layout_mode = 2
+disabled = true
 shortcut = SubResource("Shortcut_14xip")
 texture_normal = ExtResource("5_14xip")
 texture_disabled = ExtResource("9_61574")
 
 [node name="Label" type="Label" parent="PanelContainer2/VBoxContainer"]
 layout_mode = 2
-text = "Money: "
+text = "Money: 0.00"
 
 [node name="Label2" type="Label" parent="PanelContainer2/VBoxContainer"]
 layout_mode = 2
-text = "Cycle: "
+text = "Loop: 0"
