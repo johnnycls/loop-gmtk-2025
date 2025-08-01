@@ -1,6 +1,7 @@
 extends AudioStreamPlayer
 
 var bgm_list = [
+	preload("res://src/assets/bgm/Sergios Magic Dustbin.mp3")
 ]
 
 var current_bgm: int = -1
@@ -11,6 +12,7 @@ var base_volume_db: float = 0.0
 func _ready():
 	add_child(next_player)
 	next_player.bus = bus
+	play_bgm(0)
 
 func play_bgm(bgm_no: int, fade_duration: float=0, from_position: float=0):
 	if bgm_no == current_bgm:

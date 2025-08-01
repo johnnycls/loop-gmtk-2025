@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://b8hx40g3n1tm0"]
+[gd_scene load_steps=4 format=3 uid="uid://b8hx40g3n1tm0"]
 
 [ext_resource type="Script" uid="uid://dy83yn2twkjgd" path="res://src/characters/car.gd" id="1_dnjla"]
+[ext_resource type="AudioStream" uid="uid://ma3n8t5gyw5x" path="res://src/assets/sfx/cartoon-fx-light-bulb-02.wav" id="2_k40k1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yw55b"]
 size = Vector2(40, 40)
@@ -22,5 +23,8 @@ offset_right = 40.0
 offset_bottom = -5.0
 value = 100.0
 show_percentage = false
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_k40k1")
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]

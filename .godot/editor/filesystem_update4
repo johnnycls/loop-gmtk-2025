@@ -13,3 +13,4 @@ res://src/globals/main.tscn
 res://src/hud/status.gd
 res://src/hud/result.tscn
 res://src/hud/result.gd
+res://src/globals/bgm_player.gd

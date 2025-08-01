@@ -1,6 +1,9 @@
 extends Node
 
 var car_scene = preload("res://src/characters/car.tscn")
+var dispatch_sound = preload("res://src/assets/sfx/click.ogg")
+
+@onready var audio: AudioStreamPlayer = $AudioStreamPlayer
 
 var time: int = 200
 var status_page: Control
@@ -37,6 +40,7 @@ func cycle(_player_num: int):
 func dispatch(num: int):
 	var car = car_scene.instantiate()
 	add_child(car)
+	Global.play_sound(dispatch_sound, audio)
 	if num == 0:
 		_change_money(0, -Main.player1_setting[0]["cost"])
 		car.init(num, Main.player1_setting[0])

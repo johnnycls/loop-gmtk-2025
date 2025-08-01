@@ -4,6 +4,10 @@ signal cycle
 
 @onready var color_rect: ColorRect = $ColorRect
 @onready var hp_bar: ProgressBar = $ProgressBar
+@onready var audio: AudioStreamPlayer = $AudioStreamPlayer
+
+var cycle_sound = preload("res://src/assets/sfx/cartoon-fx-light-bulb-02.wav")
+var crash_sound = preload("res://src/assets/sfx/cartoon-fx-swipe-02.wav")
 
 var setting: Dictionary
 var angle: float = 0.0
@@ -41,11 +45,13 @@ func _on_area_entered(area: Area2D) -> void:
 			queue_free()
 		hp_bar.value = hp/setting["hp"]*100
 		area.hp_bar.value = area.hp/area.setting["hp"]*100
+		Global.play_sound(crash_sound, audio)
 	elif (area.is_in_group("goal1") and is_in_group("player1_car")) or (area.is_in_group("goal2") and is_in_group("player2_car")):
 			if is_start:
 				is_start = false
 			else:
 				cycle.emit()
+				Global.play_sound(cycle_sound, audio)
 
 func _process(delta: float) -> void:
 	var angular_speed: float = setting["speed"] / radius
